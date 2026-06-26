@@ -138,10 +138,64 @@
       "Need",
       "Lineage"
     ],
-    "generated_at": "2026-06-26T16:14:48.350636+00:00",
+    "generated_at": "2026-06-26T17:18:16.052898+00:00",
     "id": "sun_1719f74e7e40",
     "mass": 21.69,
     "user_id": "@Plus3Happiness",
     "word_count": 84
+  },
+  "visible_spectrum": {
+    "bands": [
+      {
+        "artifact_density": 1.0,
+        "color": "#610061",
+        "compression_reason": "mass→intensity, cluster-rank→wavelength, artifacts→band thickness",
+        "human_handle": "Repo / Proof: 3 receipts, proof 0.912",
+        "intensity": 1.0,
+        "label": "Repo / Proof",
+        "planet_id": "planet_ea5afcbbf3ba",
+        "wavelength_nm": 380
+      },
+      {
+        "artifact_density": 0.667,
+        "color": "#0028ff",
+        "compression_reason": "mass→intensity, cluster-rank→wavelength, artifacts→band thickness",
+        "human_handle": "Want Museum / Planets Agents: 2 receipts, proof 0.725",
+        "intensity": 0.852,
+        "label": "Want Museum / Planets Agents",
+        "planet_id": "planet_35622efbde48",
+        "wavelength_nm": 445
+      }
+    ],
+    "constraints": {
+      "default_detail_budget": 3,
+      "default_excerpt_chars": 280,
+      "warning": "Changing the band changes what you can see. It does not change what the sun contains.",
+      "wavelength_max_nm": 740,
+      "wavelength_min_nm": 380
+    },
+    "controls": {
+      "artifact_policy": "centroid-nearest-first",
+      "band_max_nm": 740,
+      "band_min_nm": 380,
+      "color_policy": "wavelength_nm_to_rgb",
+      "detail_budget": 3,
+      "render_mode": "photosphere"
+    },
+    "default_profile": "human_visible_safe",
+    "instrument": "visible-spectrum-safe-sun-viewer",
+    "premise": "The sun is too information-dense to stare at directly; the viewer exposes a configurable visible band.",
+    "sun_observation": {
+      "hidden_mass_note": "Unselected topics remain outside the current band; use the controls to move the instrument, not to pretend the rest is gone.",
+      "luminosity": 0.271,
+      "visible_terms": [
+        "Repo",
+        "Claims",
+        "Evidence",
+        "Receipts",
+        "Need",
+        "Lineage"
+      ]
+    }
   }
 }

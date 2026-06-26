@@ -3,47 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solar Museum</title>
+  <title>Safe Sun Viewer</title>
   <style>
-    :root { color-scheme: dark; --bg:#0d0d0b; --panel:#23231f; --line:#3a3932; --text:#f4f1e8; --muted:#aaa497; --amber:#f5c451; --teal:#9eead8; }
-    * { box-sizing:border-box; } body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif; background:radial-gradient(circle at 50% 5%,#332813,#11110f 42%,#070706); color:var(--text); }
-    main { max-width:1180px; margin:0 auto; padding:28px 18px 52px; }
-    header { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:22px; }
-    .brand { display:flex; gap:12px; align-items:center; font-weight:850; letter-spacing:-.03em; }
-    .mark { width:25px; height:25px; border:2px solid var(--text); border-radius:50%; box-shadow:0 0 24px var(--amber), inset 0 0 18px var(--amber); }
-    .grid { display:grid; grid-template-columns:360px 1fr; gap:20px; }
-    .card { background:rgba(35,35,31,.9); border:1px solid var(--line); border-radius:18px; box-shadow:0 20px 80px rgba(0,0,0,.24); }
-    .sun { padding:22px; } .orb { width:168px; height:168px; border-radius:50%; margin:10px auto 18px; display:grid; place-items:center; color:#1f1302; font-size:42px; font-weight:900; background:radial-gradient(circle at 35% 30%,#fff5bd 0 12%,#f5c451 32%,#d97706 72%,#78350f 100%); box-shadow:0 0 70px #f59e0b,0 0 160px rgba(245,158,11,.38); }
-    .metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px; } .metric { background:#1a1a17; border:1px solid #2c2b27; border-radius:12px; padding:12px; } .metric b { display:block; font-size:20px; } .metric span, .muted { color:var(--muted); }
-    .map { padding:20px; } .terrain { position:relative; height:340px; border-radius:16px; background:#141411; overflow:hidden; border:1px solid #2c2b27; }
-    .axis { position:absolute; background:rgba(255,255,255,.08); } .axis.x { left:0; right:0; height:1px; top:50%; } .axis.y { top:0; bottom:0; width:1px; left:50%; }
-    .planet-dot { position:absolute; transform:translate(-50%,-50%); border-radius:50%; border:2px solid rgba(255,255,255,.72); cursor:pointer; box-shadow:0 0 22px currentColor; }
-    .planet-list { margin-top:20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
-    .planet { padding:15px; border:1px solid var(--line); border-radius:15px; background:rgba(27,27,24,.93); cursor:pointer; } .planet.active { outline:2px solid var(--teal); }
-    .planet-head { display:flex; justify-content:space-between; gap:10px; align-items:center; } .badge { border-radius:999px; padding:5px 9px; font-size:12px; color:#10231d; background:#c9f8ec; white-space:nowrap; } .badge.self-claimed { color:#ddd5c8; background:#4a4740; } .badge.peer-vouched { color:#ddd5c8; background:#2d2a24; }
-    .artifact-panel { margin-top:18px; padding:18px; } .artifact { border-top:1px solid var(--line); padding:15px 0; } .artifact:first-child { border-top:0; } .receipt { color:var(--teal); font-size:12px; letter-spacing:.02em; }
-    @media (max-width:860px){ .grid{grid-template-columns:1fr;} }
+    :root { color-scheme: dark; --bg:#070706; --panel:#1d1d19; --panel2:#282820; --line:#3a3932; --text:#f4f1e8; --muted:#aaa497; --amber:#f5c451; --teal:#9eead8; --danger:#fb7185; }
+    * { box-sizing:border-box; } body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif; background:radial-gradient(circle at 50% 0%,#2b210f,#0e0e0c 38%,#050504); color:var(--text); }
+    main { max-width:1260px; margin:0 auto; padding:26px 18px 56px; } header { display:flex; justify-content:space-between; gap:18px; align-items:flex-start; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:20px; }
+    .brand { display:flex; gap:12px; align-items:center; font-weight:900; letter-spacing:-.035em; font-size:20px; } .mark { width:27px; height:27px; border:2px solid var(--text); border-radius:50%; box-shadow:0 0 25px var(--amber), inset 0 0 18px var(--amber); }
+    .muted { color:var(--muted); } .small { font-size:12px; } .grid { display:grid; grid-template-columns:340px minmax(0,1fr) 330px; gap:18px; align-items:start; }
+    .card { background:rgba(29,29,25,.92); border:1px solid var(--line); border-radius:18px; box-shadow:0 20px 80px rgba(0,0,0,.26); } .pad { padding:18px; }
+    h1,h2,h3 { margin:0 0 10px; letter-spacing:-.035em; } p { line-height:1.48; } button,input,select { font:inherit; }
+    .sun-shell { display:grid; place-items:center; padding:20px 0 10px; }
+    canvas { width:100%; height:390px; display:block; border-radius:16px; background:#080806; border:1px solid #2c2b27; }
+    .controls { display:grid; gap:14px; } label { display:grid; gap:7px; color:var(--muted); font-size:13px; } input[type=range] { width:100%; accent-color:var(--teal); } select { width:100%; background:#11110f; color:var(--text); border:1px solid var(--line); border-radius:11px; padding:10px; }
+    .metric-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-top:14px; } .metric { background:#141411; border:1px solid #2c2b27; border-radius:12px; padding:11px; } .metric b { display:block; font-size:19px; }
+    .spectrum { height:22px; border-radius:999px; border:1px solid #3d3a31; background:linear-gradient(90deg,#6100ff,#004dff,#00fff0,#00ff00,#ffff00,#ff7a00,#ff0000,#5b0000); position:relative; margin:12px 0; overflow:hidden; }
+    .window { position:absolute; top:0; bottom:0; border-left:2px solid white; border-right:2px solid white; background:rgba(255,255,255,.14); }
+    .band { border:1px solid var(--line); border-radius:14px; background:#151512; padding:13px; margin-bottom:10px; cursor:pointer; } .band.active { outline:2px solid var(--teal); } .band-head { display:flex; justify-content:space-between; gap:10px; align-items:center; } .swatch { width:16px; height:16px; border-radius:50%; border:1px solid rgba(255,255,255,.7); display:inline-block; vertical-align:-3px; margin-right:7px; }
+    .receipt { color:var(--teal); font-size:12px; letter-spacing:.02em; } .warning { color:#f7d08a; border-left:3px solid var(--amber); padding-left:10px; } .artifact { border-top:1px solid var(--line); padding:13px 0; } .artifact:first-child { border-top:0; }
+    .pill { display:inline-flex; border:1px solid #48463d; border-radius:999px; padding:4px 8px; color:#ded7c8; font-size:12px; margin:0 5px 5px 0; }
+    .toolbar { display:flex; gap:8px; flex-wrap:wrap; } .toolbar button { background:#11110f; color:var(--text); border:1px solid var(--line); border-radius:999px; padding:8px 11px; cursor:pointer; } .toolbar button.active { background:var(--teal); color:#10231d; }
+    @media (max-width:1050px){ .grid{grid-template-columns:1fr;} canvas{height:330px;} header{display:block;} }
   </style>
 </head>
 <body>
 <main>
-  <header><div class="brand"><div class="mark"></div><div>Solar Museum <span class="muted">/ proof of search</span></div></div><div class="muted" id="reducer"></div></header>
-  <section class="grid"><article class="card sun"><div class="orb" id="initials">?</div><h1 id="title">Solar Museum</h1><p class="muted" id="subtitle"></p><div class="metrics"><div class="metric"><b id="docs">—</b><span>docs</span></div><div class="metric"><b id="words">—</b><span>words</span></div><div class="metric"><b id="days">—</b><span>active days</span></div></div><p class="muted" id="warning"></p></article><article class="card map"><div class="terrain" id="terrain"><div class="axis x"></div><div class="axis y"></div></div></article></section>
-  <section class="planet-list" id="planetList"></section>
-  <section class="card artifact-panel" id="artifactPanel"><h2>Artifacts</h2><p class="muted">Select a planet. Receipts will appear here.</p></section>
+  <header>
+    <div><div class="brand"><div class="mark"></div><div>Safe Sun Viewer <span class="muted">/ visible spectrum instrument</span></div></div><p class="muted" id="premise"></p></div>
+    <div class="muted small" id="reducer"></div>
+  </header>
+  <section class="grid">
+    <aside class="card pad">
+      <h1 id="title">Solar Museum</h1><p class="muted" id="subtitle"></p><p class="warning" id="warning"></p>
+      <div class="metric-grid"><div class="metric"><b id="docs">—</b><span class="muted">docs</span></div><div class="metric"><b id="words">—</b><span class="muted">words</span></div><div class="metric"><b id="days">—</b><span class="muted">days</span></div></div>
+      <h3 style="margin-top:18px">Visible emissions</h3><div id="terms"></div>
+    </aside>
+    <section class="card pad">
+      <div class="toolbar" id="modeBtns"><button data-mode="photosphere" class="active">photosphere</button><button data-mode="spectrum">spectrum</button><button data-mode="terrain">terrain</button></div>
+      <div class="sun-shell"><canvas id="sunCanvas" width="900" height="520"></canvas></div>
+      <div class="spectrum"><div class="window" id="window"></div></div><div class="muted small" id="windowText"></div>
+    </section>
+    <aside class="card pad controls">
+      <h2>Instrument controls</h2>
+      <label>band min nm <input id="minNm" type="range" min="380" max="740" value="380"><span id="minVal"></span></label>
+      <label>band max nm <input id="maxNm" type="range" min="380" max="740" value="740"><span id="maxVal"></span></label>
+      <label>detail budget <input id="budget" type="range" min="1" max="8" value="3"><span id="budgetVal"></span></label>
+      <label>excerpt compression <input id="excerpt" type="range" min="80" max="420" value="280"><span id="excerptVal"></span></label>
+      <label>render mode <select id="renderMode"><option>photosphere</option><option>spectrum</option><option>terrain</option></select></label>
+      <p class="muted small">Instrument rule: widen the band to see more, narrow it to understand. The viewer refuses the comforting lie that all of a person fits on one screen.</p>
+    </aside>
+  </section>
+  <section class="grid" style="grid-template-columns:1fr 1fr; margin-top:18px">
+    <section class="card pad"><h2>Visible bands</h2><div id="bands"></div></section>
+    <section class="card pad" id="artifactPanel"><h2>Receipts</h2><p class="muted">Select a visible band.</p></section>
+  </section>
 </main>
 <script>
-let SYSTEM = null;
+let SYSTEM, selectedId=null;
 const $ = id => document.getElementById(id);
+const state = {min:380,max:740,budget:3,excerpt:280,mode:'photosphere'};
 function fmt(n){ return typeof n === 'number' ? n.toLocaleString() : '—'; }
-function initials(name){ return (name||'?').replace(/^@/,'').split(/\s+/).map(x=>x[0]).join('').slice(0,2).toUpperCase(); }
-function badgeClass(s){ return String(s||'').replace(/[^a-z0-9-]/g,''); }
-function norm(v,min,max){ return max === min ? 50 : 8 + ((v-min)/(max-min))*84; }
-async function boot(){ SYSTEM = await fetch('sun.json').then(r=>r.json()); render(SYSTEM); }
-function render(system){ const sun=system.sun; $('title').textContent=system.museum_copy.title; $('subtitle').textContent=system.museum_copy.subtitle; $('warning').textContent=system.museum_copy.warning; $('initials').textContent=initials(sun.display_name); $('docs').textContent=fmt(sun.document_count); $('words').textContent=fmt(sun.word_count); $('days').textContent=fmt(sun.active_days); $('reducer').textContent=`${system.provenance.embedding} → ${system.provenance.reducer} → ${system.provenance.clusterer}`; renderTerrain(system.planets); renderList(system.planets); if(system.planets[0]) selectPlanet(system.planets[0].id); }
-function renderTerrain(planets){ const el=$('terrain'); el.querySelectorAll('.planet-dot').forEach(x=>x.remove()); const xs=planets.map(p=>p.centroid[0]), ys=planets.map(p=>p.centroid[1]); const xmin=Math.min(...xs), xmax=Math.max(...xs), ymin=Math.min(...ys), ymax=Math.max(...ys); planets.forEach(p=>{ const b=document.createElement('button'); b.className='planet-dot'; b.title=p.name; b.onclick=()=>selectPlanet(p.id); b.style.left=norm(p.centroid[0],xmin,xmax)+'%'; b.style.top=(100-norm(p.centroid[1],ymin,ymax))+'%'; b.style.width=Math.max(18,Math.min(44,p.mass*1.9))+'px'; b.style.height=b.style.width; b.style.background=p.color; b.style.color=p.color; el.appendChild(b); }); }
-function renderList(planets){ const list=$('planetList'); list.innerHTML=''; planets.forEach(p=>{ const art=document.createElement('article'); art.className='planet'; art.dataset.id=p.id; art.onclick=()=>selectPlanet(p.id); art.innerHTML=`<div class="planet-head"><h3>${p.name}</h3><span class="badge ${badgeClass(p.attestation_status)}">${p.attestation_status}</span></div><p class="muted">${p.summary}</p><div class="receipt">${p.artifacts.length} artifacts · proof ${p.proof_score} · ${p.receipt_id}</div>`; list.appendChild(art); }); }
-function selectPlanet(id){ document.querySelectorAll('.planet').forEach(x=>x.classList.toggle('active',x.dataset.id===id)); const p=SYSTEM.planets.find(x=>x.id===id); if(!p)return; $('artifactPanel').innerHTML=`<h2>${p.name}</h2><p class="muted">${p.summary}</p><div class="receipt">${p.receipt_id} · terms: ${p.top_terms.join(', ')}</div>` + p.artifacts.map(a=>`<div class="artifact"><h3>${a.title}</h3><p>“${a.excerpt}”</p><div class="receipt">${a.timestamp} · source ${a.source_document_id}${a.url ? ` · <a href="${a.url}">source</a>` : ''}</div><p class="muted">${a.proof_of_search}</p></div>`).join(''); }
+function clamp(a,b){ if(a>b) return [b,a]; return [a,b]; }
+async function boot(){ SYSTEM = await fetch('sun.json').then(r=>r.json()); hydrate(); bind(); renderAll(); }
+function hydrate(){ const s=SYSTEM.sun, vs=SYSTEM.visible_spectrum || {}; $('title').textContent=SYSTEM.museum_copy.title; $('subtitle').textContent=SYSTEM.museum_copy.subtitle; $('warning').textContent=vs.constraints?.warning || SYSTEM.museum_copy.warning; $('premise').textContent=vs.premise || 'Compressed visible view.'; $('docs').textContent=fmt(s.document_count); $('words').textContent=fmt(s.word_count); $('days').textContent=fmt(s.active_days); $('reducer').textContent=`${SYSTEM.provenance.embedding} → ${SYSTEM.provenance.reducer} → ${SYSTEM.provenance.clusterer}`; $('terms').innerHTML=(vs.sun_observation?.visible_terms||s.emissions||[]).map(t=>`<span class="pill">${t}</span>`).join(''); }
+function bind(){ ['minNm','maxNm','budget','excerpt'].forEach(id=>$(id).addEventListener('input',()=>{ state.min=+$('minNm').value; state.max=+$('maxNm').value; state.budget=+$('budget').value; state.excerpt=+$('excerpt').value; renderAll(); })); $('renderMode').addEventListener('change',e=>{state.mode=e.target.value; markMode(); renderAll();}); document.querySelectorAll('#modeBtns button').forEach(b=>b.onclick=()=>{state.mode=b.dataset.mode; $('renderMode').value=state.mode; markMode(); renderAll();}); }
+function markMode(){ document.querySelectorAll('#modeBtns button').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode)); }
+function visibleBands(){ let [mn,mx]=clamp(state.min,state.max); return (SYSTEM.visible_spectrum?.bands||[]).filter(b=>b.wavelength_nm>=mn && b.wavelength_nm<=mx); }
+function renderAll(){ let [mn,mx]=clamp(state.min,state.max); $('minVal').textContent=state.min+' nm'; $('maxVal').textContent=state.max+' nm'; $('budgetVal').textContent=state.budget+' bands/artifacts'; $('excerptVal').textContent=state.excerpt+' chars'; $('window').style.left=((mn-380)/360*100)+'%'; $('window').style.width=((mx-mn)/360*100)+'%'; $('windowText').textContent=`visible instrument window: ${mn}–${mx} nm · ${visibleBands().length}/${SYSTEM.planets.length} planets visible`; renderCanvas(); renderBands(); if(selectedId && visibleBands().some(b=>b.planet_id===selectedId)) renderArtifacts(selectedId); else if(visibleBands()[0]) renderArtifacts(visibleBands()[0].planet_id); }
+function renderCanvas(){ const c=$('sunCanvas'), ctx=c.getContext('2d'), w=c.width,h=c.height; ctx.clearRect(0,0,w,h); ctx.fillStyle='#080806'; ctx.fillRect(0,0,w,h); const bands=visibleBands().slice(0,state.budget); if(state.mode==='spectrum') drawSpectrum(ctx,w,h,bands); else if(state.mode==='terrain') drawTerrain(ctx,w,h,bands); else drawPhotosphere(ctx,w,h,bands); }
+function drawPhotosphere(ctx,w,h,bands){ const cx=w/2, cy=h/2, base=Math.min(w,h)*.28; const lum=SYSTEM.visible_spectrum?.sun_observation?.luminosity||.55; const g=ctx.createRadialGradient(cx-base*.25,cy-base*.25,10,cx,cy,base*1.35); g.addColorStop(0,'#fff8bf'); g.addColorStop(.25,'#f5c451'); g.addColorStop(.65,'#b45309'); g.addColorStop(1,'rgba(0,0,0,0)'); ctx.globalAlpha=.8+lum*.2; ctx.fillStyle=g; ctx.beginPath(); ctx.arc(cx,cy,base*1.35,0,Math.PI*2); ctx.fill(); ctx.globalAlpha=1; bands.forEach((b,i)=>{ const a=(i/bands.length)*Math.PI*2-Math.PI/2; const r=base*(.45+b.intensity*.55); ctx.strokeStyle=b.color; ctx.lineWidth=7+b.artifact_density*12; ctx.globalAlpha=.62; ctx.beginPath(); ctx.arc(cx,cy,r,a,a+Math.PI*.62); ctx.stroke(); ctx.globalAlpha=1; label(ctx,b.label,cx+Math.cos(a+.3)*r,cy+Math.sin(a+.3)*r,b.color); }); }
+function drawSpectrum(ctx,w,h,bands){ const grad=ctx.createLinearGradient(60,0,w-60,0); ['#6100ff','#004dff','#00fff0','#00ff00','#ffff00','#ff7a00','#ff0000','#5b0000'].forEach((c,i)=>grad.addColorStop(i/7,c)); ctx.fillStyle=grad; ctx.fillRect(60,h*.38,w-120,70); bands.forEach(b=>{ const x=60+(b.wavelength_nm-380)/360*(w-120); ctx.fillStyle=b.color; ctx.fillRect(x-4,h*.30,8,150); label(ctx,`${b.wavelength_nm}nm ${b.label}`,x+8,h*.28,b.color); }); }
+function drawTerrain(ctx,w,h,bands){ const planets=SYSTEM.planets.filter(p=>bands.some(b=>b.planet_id===p.id)); const xs=SYSTEM.planets.map(p=>p.centroid[0]), ys=SYSTEM.planets.map(p=>p.centroid[1]); const xmin=Math.min(...xs), xmax=Math.max(...xs), ymin=Math.min(...ys), ymax=Math.max(...ys); ctx.strokeStyle='rgba(255,255,255,.08)'; ctx.beginPath(); ctx.moveTo(w/2,40); ctx.lineTo(w/2,h-40); ctx.moveTo(50,h/2); ctx.lineTo(w-50,h/2); ctx.stroke(); planets.forEach(p=>{ const b=bands.find(x=>x.planet_id===p.id); const x=50+((p.centroid[0]-xmin)/(xmax-xmin||1))*(w-100); const y=h-50-((p.centroid[1]-ymin)/(ymax-ymin||1))*(h-100); ctx.fillStyle=b.color; ctx.beginPath(); ctx.arc(x,y,12+p.mass*.8,0,Math.PI*2); ctx.fill(); label(ctx,p.name,x+16,y,b.color); }); }
+function label(ctx,text,x,y,color){ ctx.font='15px Inter, sans-serif'; ctx.fillStyle=color; ctx.fillText(text,x,y); }
+function renderBands(){ const bands=visibleBands().slice(0,state.budget), box=$('bands'); box.innerHTML=''; bands.forEach(b=>{ const p=SYSTEM.planets.find(x=>x.id===b.planet_id); const div=document.createElement('div'); div.className='band'+(selectedId===b.planet_id?' active':''); div.onclick=()=>renderArtifacts(b.planet_id); div.innerHTML=`<div class="band-head"><b><span class="swatch" style="background:${b.color}"></span>${b.label}</b><span class="receipt">${b.wavelength_nm} nm</span></div><p class="muted">${b.human_handle}</p><div class="receipt">${b.compression_reason} · ${p.receipt_id}</div>`; box.appendChild(div); }); if(!bands.length) box.innerHTML='<p class="muted">No planets in this band. Move the instrument.</p>'; }
+function renderArtifacts(id){ selectedId=id; const p=SYSTEM.planets.find(x=>x.id===id); const b=(SYSTEM.visible_spectrum?.bands||[]).find(x=>x.planet_id===id); document.querySelectorAll('.band').forEach(el=>el.classList.remove('active')); const artifacts=p.artifacts.slice(0,state.budget); $('artifactPanel').innerHTML=`<h2>${p.name}</h2><p class="muted">${p.summary}</p><div class="receipt">${b?.wavelength_nm||'?'} nm · ${p.receipt_id} · terms: ${p.top_terms.join(', ')}</div>` + artifacts.map(a=>`<div class="artifact"><h3>${a.title}</h3><p>“${trim(a.excerpt,state.excerpt)}”</p><div class="receipt">${a.timestamp} · source ${a.source_document_id}${a.url ? ` · <a href="${a.url}">source</a>` : ''}</div><p class="muted">${a.proof_of_search}</p></div>`).join(''); renderBands(); }
+function trim(s,n){ return s.length>n ? s.slice(0,n-1)+'…' : s; }
 boot();
 </script>
 </body>
