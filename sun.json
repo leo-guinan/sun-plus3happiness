@@ -1,0 +1,147 @@
+{
+  "museum_copy": {
+    "subtitle": "A visitable proof-of-search map: UMAP planets, quote receipts, and public registration.",
+    "title": "Plus3Happiness's Solar Museum",
+    "warning": "Not reputation. Evidence terrain. Reputation can rot quietly; terrain at least leaves footprints."
+  },
+  "planets": [
+    {
+      "artifacts": [
+        {
+          "excerpt": "The product should create a sun repo for a person and broadcast it as an issue into the galaxy root repo.",
+          "id": "art_4c693df817f8",
+          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
+          "source_document_id": "5",
+          "timestamp": "2026-06-26T10:00:00",
+          "title": "Repo / Proof artifact from 2026-06-26",
+          "umap_x": 1.42246,
+          "umap_y": 20.92521,
+          "url": ""
+        },
+        {
+          "excerpt": "Formal reputation systems need vouches, attestations, lineage, and receipts so trust can be inspected instead of socially implied.",
+          "id": "art_bad17fe83372",
+          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
+          "source_document_id": "1",
+          "timestamp": "2026-06-22T10:00:00",
+          "title": "Repo / Proof artifact from 2026-06-22",
+          "umap_x": 2.16187,
+          "umap_y": 21.22068,
+          "url": ""
+        },
+        {
+          "excerpt": "Proof of search means predictions, misses, calibration, evidence, and claims that can lose.",
+          "id": "art_53e532654d60",
+          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
+          "source_document_id": "2",
+          "timestamp": "2026-06-23T10:00:00",
+          "title": "Repo / Proof artifact from 2026-06-23",
+          "umap_x": 2.05395,
+          "umap_y": 20.195,
+          "url": ""
+        }
+      ],
+      "attestation_status": "peer-vouched",
+      "centroid": [
+        1.87943,
+        20.7803
+      ],
+      "cluster_id": 0,
+      "color": "#14b8a6",
+      "id": "planet_ea5afcbbf3ba",
+      "mass": 14.545,
+      "name": "Repo / Proof",
+      "orbit": 0.22,
+      "proof_score": 0.912,
+      "receipt_id": "rcpt_d710375b35ae",
+      "summary": "UMAP cluster 0: 3 documents orbiting repo, proof, means predictions; 3 quote-backed artifacts pinned.",
+      "top_terms": [
+        "repo",
+        "proof",
+        "means predictions",
+        "proof search",
+        "claims lose"
+      ]
+    },
+    {
+      "artifacts": [
+        {
+          "excerpt": "I want a museum people can visit: planets for AI agents, tools, autonomy, and pipeline artifacts.",
+          "id": "art_5ad081d50642",
+          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: want museum, planets agents, agents tools, artifacts.",
+          "source_document_id": "3",
+          "timestamp": "2026-06-24T10:00:00",
+          "title": "Want Museum / Planets Agents artifact from 2026-06-24",
+          "umap_x": 3.01675,
+          "umap_y": 21.29175,
+          "url": ""
+        },
+        {
+          "excerpt": "Spiritual teachers need better dharma combat: public lineage, retreat evidence, meditation practice receipts, and contested claims.",
+          "id": "art_a56751082582",
+          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: want museum, planets agents, agents tools, artifacts.",
+          "source_document_id": "4",
+          "timestamp": "2026-06-25T10:00:00",
+          "title": "Want Museum / Planets Agents artifact from 2026-06-25",
+          "umap_x": 3.0282,
+          "umap_y": 20.3728,
+          "url": ""
+        }
+      ],
+      "attestation_status": "peer-vouched",
+      "centroid": [
+        3.02247,
+        20.83227
+      ],
+      "cluster_id": 1,
+      "color": "#8b5cf6",
+      "id": "planet_35622efbde48",
+      "mass": 12.394,
+      "name": "Want Museum / Planets Agents",
+      "orbit": 0.433,
+      "proof_score": 0.725,
+      "receipt_id": "rcpt_dacf588dafd5",
+      "summary": "UMAP cluster 1: 2 documents orbiting want museum, planets agents, agents tools; 2 quote-backed artifacts pinned.",
+      "top_terms": [
+        "want museum",
+        "planets agents",
+        "agents tools",
+        "artifacts",
+        "autonomy"
+      ]
+    }
+  ],
+  "provenance": {
+    "builder": "sunforge",
+    "clusterer": "kmeans-on-umap-coordinates",
+    "embedding": "tf-idf",
+    "reducer": "umap",
+    "trust_os_mapping": {
+      "artifact": "dated quote-backed proof-of-search receipt",
+      "issue_registration": "broadcast of existence into the galaxy root repo",
+      "planet": "visitable UMAP topic cluster",
+      "sun": "corpus gravity center"
+    },
+    "version": "0.1.0"
+  },
+  "sun": {
+    "active_days": 5,
+    "color": "#f59e0b",
+    "description": "Plus3Happiness's proof-of-search sun: 5 dated artifacts across 5 active days.",
+    "display_name": "Plus3Happiness",
+    "document_count": 5,
+    "emissions": [
+      "Repo",
+      "Claims",
+      "Evidence",
+      "Receipts",
+      "Need",
+      "Lineage"
+    ],
+    "generated_at": "2026-06-26T16:14:48.350636+00:00",
+    "id": "sun_1719f74e7e40",
+    "mass": 21.69,
+    "user_id": "@Plus3Happiness",
+    "word_count": 84
+  }
+}
