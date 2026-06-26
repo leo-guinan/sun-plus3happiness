@@ -1,8 +1,8 @@
-# Plus3Happiness's Solar Museum
+# Plus3Happiness: Sensor-Built Solar Museum
 
-A generated proof-of-search sun repo for `@Plus3Happiness`.
+A generated proof-of-search sun repo for `@Plus3Happiness`, rebuilt from the Trust Substrate X satellite dump.
 
-Boundary: generated sun repos are only as complete as the public-safe input corpus. If the source is a seed excerpt rather than a full archive, this proves the creation/registration loop, not comprehensive reputation.
+Boundary: the source is public-visible browser-extension capture only. Hidden replies, actor-level likes, private context, and deleted material are not available. The artifact is evidence terrain, not reputation.
 
 Open `index.html` or serve locally:
 
@@ -10,15 +10,23 @@ Open `index.html` or serve locally:
 python3 -m http.server 8899
 ```
 
-## Planets
+## Sensor source
 
-- Repo / Proof — 3 artifacts, receipt `rcpt_d710375b35ae`
-- Want Museum / Planets Agents — 2 artifacts, receipt `rcpt_dacf588dafd5`
+- Raw local dump: Trust Substrate X satellite export in `~/Downloads/` (timestamped NDJSON; local-only)
+- Public deduplicated corpus: `data/plus3happiness-x-satellite-public-visible.jsonl` (69 records)
+
+## Planets
+- Vouchsafe / Transparent Trust Networks — 4 artifacts, receipt `rcpt_d3537f8027ad`
+- Happiness Independent of Conditions — 2 artifacts, receipt `rcpt_29d012d833cd`
+- Meditation, Ambition, and Agency — 3 artifacts, receipt `rcpt_d9404bbf8b4f`
+- Direct Pointing / Thousands of Data Points — 1 artifacts, receipt `rcpt_5b972bac1341`
+- Suffering Abolition and Leader Incentives — 2 artifacts, receipt `rcpt_41911a0619c4`
+- Work Culture as Emotional Bug Report — 2 artifacts, receipt `rcpt_fcfafc54e0f4`
 
 ## Provenance
 
-- Embedding: `tf-idf`
-- Reducer: `umap`
-- Clusterer: `kmeans-on-umap-coordinates`
+- Source: `x-satellite-sensor.v1` browser extension dump
+- Import: public-visible, deduplicated by tweet id
+- Planet construction: curated keyword-gated topic planets over quote-backed receipts
 
 This is not an authority claim. It is a visitable receipt map.

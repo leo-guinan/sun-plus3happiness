@@ -1,201 +1,452 @@
 {
   "museum_copy": {
-    "subtitle": "A visitable proof-of-search map: UMAP planets, quote receipts, and public registration.",
-    "title": "Plus3Happiness's Solar Museum",
-    "warning": "Not reputation. Evidence terrain. Reputation can rot quietly; terrain at least leaves footprints."
+    "title": "Plus3Happiness: Sensor-Built Solar Museum",
+    "subtitle": "A clearer, quote-backed map of public X traces: trust products, happiness work, meditation/agency, transmission, suffering abolition, and work-culture critiques.",
+    "warning": "Not reputation. A visible-surface sensor dump is a keyhole, not a soul. The useful part is that the quotes remain inspectable."
   },
   "planets": [
     {
+      "id": "planet_70f524193e4b",
+      "name": "Vouchsafe / Transparent Trust Networks",
+      "summary": "Turns reputation into inspectable social evidence: vouches, vouchers, Twitter-connected validation, and a separately branded Vouchsafe/Vouchstream product surface. 4 quote-backed receipts pinned from the sensor dump.",
+      "top_terms": [
+        "vouchsafe",
+        "trust network",
+        "vouchers",
+        "twitter validation",
+        "tpot"
+      ],
       "artifacts": [
         {
-          "excerpt": "The product should create a sun repo for a person and broadcast it as an issue into the galaxy root repo.",
-          "id": "art_4c693df817f8",
-          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
-          "source_document_id": "5",
-          "timestamp": "2026-06-26T10:00:00",
-          "title": "Repo / Proof artifact from 2026-06-26",
-          "umap_x": 1.42246,
-          "umap_y": 20.92521,
-          "url": ""
+          "id": "art_8a30ee0ec4b0",
+          "title": "Vouchsafe / Transparent Trust Networks receipt from 2026-06-22",
+          "excerpt": "request for \"startup\". willing to pay $120/yr i think others would too, prolly @nosilverv knows others who'd pitch in, we can get to thousands $ for it. happy to help with prod/distribution i did enjoy what came from tpot before, stuff made my @exgenesis and others i cant remember atm id find value in this both in seeing the 'vouchees' but also the epistemics of 'vouchers' Jk in the QT but actually I would kill to have formalized reputation systems like this. Highest leverage use of 'one man's modus ponens is another man's modus tollens' evaaa x.com/nosilverv/stat…",
+          "source_document_id": "x-2070120235995132157",
+          "timestamp": "2026-06-22T09:32:11",
+          "url": "https://x.com/Plus3Happiness/status/2070120235995132157",
+          "umap_x": 4.0,
+          "umap_y": 0.0,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: vouchsafe, trust network, vouchers, twitter validation."
         },
         {
-          "excerpt": "Formal reputation systems need vouches, attestations, lineage, and receipts so trust can be inspected instead of socially implied.",
-          "id": "art_bad17fe83372",
-          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
-          "source_document_id": "1",
-          "timestamp": "2026-06-22T10:00:00",
-          "title": "Repo / Proof artifact from 2026-06-22",
-          "umap_x": 2.16187,
-          "umap_y": 21.22068,
-          "url": ""
+          "id": "art_f921691213a4",
+          "title": "Vouchsafe / Transparent Trust Networks receipt from 2026-06-25",
+          "excerpt": "well yea, in the end seems like everyone still takes queues from the trust network, not so much from what the person themselves say. so might as well make it easy to make transparent said network",
+          "source_document_id": "x-2070170976331997200",
+          "timestamp": "2026-06-25T15:43:17",
+          "url": "https://x.com/Plus3Happiness/status/2070170976331997200",
+          "umap_x": 4.0,
+          "umap_y": 0.0,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: vouchsafe, trust network, vouchers, twitter validation."
         },
         {
-          "excerpt": "Proof of search means predictions, misses, calibration, evidence, and claims that can lose.",
-          "id": "art_53e532654d60",
-          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: repo, proof, means predictions, proof search.",
-          "source_document_id": "2",
-          "timestamp": "2026-06-23T10:00:00",
-          "title": "Repo / Proof artifact from 2026-06-23",
-          "umap_x": 2.05395,
-          "umap_y": 20.195,
-          "url": ""
+          "id": "art_f127302892a3",
+          "title": "Vouchsafe / Transparent Trust Networks receipt from 2026-06-25",
+          "excerpt": "cool! for product, validation by connecting twitter is pretty key btw :D",
+          "source_document_id": "x-2070163721159123392",
+          "timestamp": "2026-06-25T15:14:27",
+          "url": "https://x.com/Plus3Happiness/status/2070163721159123392",
+          "umap_x": 4.0,
+          "umap_y": 0.0,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: vouchsafe, trust network, vouchers, twitter validation."
+        },
+        {
+          "id": "art_c1c7eeaab210",
+          "title": "Vouchsafe / Transparent Trust Networks receipt from 2026-06-25",
+          "excerpt": "likely makes sense to separate products? im thinking in terms of branding and such, i kinda liked the naming of \"vouchsafe\" that @nosilverv had in it",
+          "source_document_id": "x-2070178307887316997",
+          "timestamp": "2026-06-25T16:12:25",
+          "url": "https://x.com/Plus3Happiness/status/2070178307887316997",
+          "umap_x": 4.0,
+          "umap_y": 0.0,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: vouchsafe, trust network, vouchers, twitter validation."
         }
       ],
-      "attestation_status": "peer-vouched",
-      "centroid": [
-        1.87943,
-        20.7803
-      ],
+      "artifact_count": 4,
       "cluster_id": 0,
       "color": "#14b8a6",
-      "id": "planet_ea5afcbbf3ba",
-      "mass": 14.545,
-      "name": "Repo / Proof",
+      "centroid": [
+        4.0,
+        0.0
+      ],
+      "mass": 22.0,
       "orbit": 0.22,
-      "proof_score": 0.912,
-      "receipt_id": "rcpt_d710375b35ae",
-      "summary": "UMAP cluster 0: 3 documents orbiting repo, proof, means predictions; 3 quote-backed artifacts pinned.",
-      "top_terms": [
-        "repo",
-        "proof",
-        "means predictions",
-        "proof search",
-        "claims lose"
-      ]
+      "proof_score": 0.96,
+      "receipt_id": "rcpt_d3537f8027ad",
+      "attestation_status": "sensor-visible-public-x-capture"
     },
     {
+      "id": "planet_9427750f2461",
+      "name": "Happiness Independent of Conditions",
+      "summary": "A process claim, not just a vibe: phased work toward reduced suffering and increased happiness, with explicit concern that benefits not remain locked inside meditation practice. 2 quote-backed receipts pinned from the sensor dump.",
+      "top_terms": [
+        "happiness independent of conditions",
+        "phases",
+        "suffering reduction",
+        "inner work",
+        "outer shows"
+      ],
       "artifacts": [
         {
-          "excerpt": "I want a museum people can visit: planets for AI agents, tools, autonomy, and pipeline artifacts.",
-          "id": "art_5ad081d50642",
-          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: want museum, planets agents, agents tools, artifacts.",
-          "source_document_id": "3",
-          "timestamp": "2026-06-24T10:00:00",
-          "title": "Want Museum / Planets Agents artifact from 2026-06-24",
-          "umap_x": 3.01675,
-          "umap_y": 21.29175,
-          "url": ""
+          "id": "art_7934d6a22c6f",
+          "title": "Happiness Independent of Conditions receipt from 2026-04-30",
+          "excerpt": "i speak a lot of buddhism/meditation, but my focus has always been unbundling benefits from the common practices most get to know e.g. sitting and breath meditation so i hope this answers a common concern: you do not need to have prior meditation exp or be \"already good\" at it The Way I Work - The process of moving towards 'Happiness Independent of Conditions' Many people have been asking how I work. So I wrote the following outline. Phases My work is divided in 4 phases, each providing a substantial reduction in suffering and an increase in x.com/Plus3Happiness…",
+          "source_document_id": "x-2049687839269650762",
+          "timestamp": "2026-04-30T03:10:36",
+          "url": "https://x.com/Plus3Happiness/status/2049687839269650762",
+          "umap_x": 2.175,
+          "umap_y": 3.76721,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: happiness independent of conditions, phases, suffering reduction, inner work."
         },
         {
-          "excerpt": "Spiritual teachers need better dharma combat: public lineage, retreat evidence, meditation practice receipts, and contested claims.",
-          "id": "art_a56751082582",
-          "proof_of_search": "UMAP cluster → centroid-near source → quote. Terms: want museum, planets agents, agents tools, artifacts.",
-          "source_document_id": "4",
-          "timestamp": "2026-06-25T10:00:00",
-          "title": "Want Museum / Planets Agents artifact from 2026-06-25",
-          "umap_x": 3.0282,
-          "umap_y": 20.3728,
-          "url": ""
+          "id": "art_0c2832a36132",
+          "title": "Happiness Independent of Conditions receipt from 2026-06-09",
+          "excerpt": "the best way to know that 'inner work' is working is that it 'outer shows' in your desires and wants happening with increased likelihood when you read \"meditation killed my ambition\" you should understand \"found a way to be happy without focusing on my everday challenges but not the courage to face them\" x.com/Plus3Happiness…",
+          "source_document_id": "x-2064441156709355614",
+          "timestamp": "2026-06-09T20:15:01",
+          "url": "https://x.com/Plus3Happiness/status/2064441156709355614",
+          "umap_x": 2.175,
+          "umap_y": 3.76721,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: happiness independent of conditions, phases, suffering reduction, inner work."
         }
       ],
-      "attestation_status": "peer-vouched",
-      "centroid": [
-        3.02247,
-        20.83227
-      ],
+      "artifact_count": 2,
       "cluster_id": 1,
-      "color": "#8b5cf6",
-      "id": "planet_35622efbde48",
-      "mass": 12.394,
-      "name": "Want Museum / Planets Agents",
-      "orbit": 0.433,
-      "proof_score": 0.725,
-      "receipt_id": "rcpt_dacf588dafd5",
-      "summary": "UMAP cluster 1: 2 documents orbiting want museum, planets agents, agents tools; 2 quote-backed artifacts pinned.",
+      "color": "#f59e0b",
+      "centroid": [
+        2.175,
+        3.76721
+      ],
+      "mass": 16.8,
+      "orbit": 0.34,
+      "proof_score": 0.84,
+      "receipt_id": "rcpt_29d012d833cd",
+      "attestation_status": "sensor-visible-public-x-capture"
+    },
+    {
+      "id": "planet_0fec2e08e720",
+      "name": "Meditation, Ambition, and Agency",
+      "summary": "Their recurring edge: meditation is useful but incomplete if it becomes a way to avoid everyday challenges, worldly effectiveness, or agency/productivity limits. 3 quote-backed receipts pinned from the sensor dump.",
       "top_terms": [
-        "want museum",
-        "planets agents",
-        "agents tools",
-        "artifacts",
-        "autonomy"
-      ]
+        "meditation killed my ambition",
+        "agency",
+        "productivity",
+        "worldly affairs",
+        "limitations"
+      ],
+      "artifacts": [
+        {
+          "id": "art_623782989e05",
+          "title": "Meditation, Ambition, and Agency receipt from 2026-05-11",
+          "excerpt": "when you read \"meditation killed my ambition\" you should understand \"found a way to be happy without focusing on my everday challenges but not the courage to face them\" “”meditation killed my ambition”” a diagram for your consideration then",
+          "source_document_id": "x-2053953510946046359",
+          "timestamp": "2026-05-11T21:40:52",
+          "url": "https://x.com/Plus3Happiness/status/2053953510946046359",
+          "umap_x": -2.35,
+          "umap_y": 4.07032,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: meditation killed my ambition, agency, productivity, worldly affairs."
+        },
+        {
+          "id": "art_9fdfa813ed59",
+          "title": "Meditation, Ambition, and Agency receipt from 2026-05-27",
+          "excerpt": "you have to hit maximal benefits from a thing before being able to find its limitations. for example, buddhism makes great for not suffering and buddhism also doesnt have a real answer to high effectiveness in the worldly affairs i'm making my \"Agency, productivity & other trivialities\" presentation public, hoping it's going to be useful to others as well (link below) formatting might be a bit off due to uploading to Slides x.com/sensefulronin/…",
+          "source_document_id": "x-2059533188016599253",
+          "timestamp": "2026-05-27T07:12:30",
+          "url": "https://x.com/Plus3Happiness/status/2059533188016599253",
+          "umap_x": -2.35,
+          "umap_y": 4.07032,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: meditation killed my ambition, agency, productivity, worldly affairs."
+        },
+        {
+          "id": "art_186011313289",
+          "title": "Meditation, Ambition, and Agency receipt from 2026-06-09",
+          "excerpt": "the best way to know that 'inner work' is working is that it 'outer shows' in your desires and wants happening with increased likelihood when you read \"meditation killed my ambition\" you should understand \"found a way to be happy without focusing on my everday challenges but not the courage to face them\" x.com/Plus3Happiness…",
+          "source_document_id": "x-2064441156709355614",
+          "timestamp": "2026-06-09T20:15:01",
+          "url": "https://x.com/Plus3Happiness/status/2064441156709355614",
+          "umap_x": -2.35,
+          "umap_y": 4.07032,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: meditation killed my ambition, agency, productivity, worldly affairs."
+        }
+      ],
+      "artifact_count": 3,
+      "cluster_id": 2,
+      "color": "#8b5cf6",
+      "centroid": [
+        -2.35,
+        4.07032
+      ],
+      "mass": 20.6,
+      "orbit": 0.46,
+      "proof_score": 0.9,
+      "receipt_id": "rcpt_d9404bbf8b4f",
+      "attestation_status": "sensor-visible-public-x-capture"
+    },
+    {
+      "id": "planet_5b554a087785",
+      "name": "Direct Pointing / Thousands of Data Points",
+      "summary": "Treats spiritual transmission as something operational enough to test through pointers, calls, and many observations — less aura, more inspectable signal. 1 quote-backed receipts pinned from the sensor dump.",
+      "top_terms": [
+        "direct pointing",
+        "zoom call",
+        "thousands of data points",
+        "transmission",
+        "pointers"
+      ],
+      "artifacts": [
+        {
+          "id": "art_ab8bfaf34fae",
+          "title": "Direct Pointing / Thousands of Data Points receipt from 2026-05-13",
+          "excerpt": "when the pointers are really good, a zoom call suffices imho transmission doesnt really require \"be in the presence and absorb de vibes\" and we got thousands of data points Reading some unpublished Chris Lakin and it hit me -> if you're trying to go \"all the way\" spiritually AND given that direct pointing by extraordinary means/direct transmission is a thing shouldn't you just pilgrimage to enlightened masters, & not meditate alone in your room??",
+          "source_document_id": "x-2054619810588483811",
+          "timestamp": "2026-05-13T17:48:30",
+          "url": "https://x.com/Plus3Happiness/status/2054619810588483811",
+          "umap_x": -5.05,
+          "umap_y": 0.0,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: direct pointing, zoom call, thousands of data points, transmission."
+        }
+      ],
+      "artifact_count": 1,
+      "cluster_id": 3,
+      "color": "#06b6d4",
+      "centroid": [
+        -5.05,
+        0.0
+      ],
+      "mass": 15.4,
+      "orbit": 0.58,
+      "proof_score": 0.78,
+      "receipt_id": "rcpt_5b972bac1341",
+      "attestation_status": "sensor-visible-public-x-capture"
+    },
+    {
+      "id": "planet_d40fbbde6568",
+      "name": "Suffering Abolition and Leader Incentives",
+      "summary": "Sees demand for spiritual leaders as real but corruptible; proposes peer-network forms and explicitly names suffering reduction/abolition as a management domain. 2 quote-backed receipts pinned from the sensor dump.",
+      "top_terms": [
+        "suffering abolition",
+        "leaders that can uplift",
+        "decentralized network",
+        "cults",
+        "incentives corrupt"
+      ],
+      "artifacts": [
+        {
+          "id": "art_951c3404e755",
+          "title": "Suffering Abolition and Leader Incentives receipt from 2026-05-20",
+          "excerpt": "as i've said way back (last year), i'm willing to be the general manager of suffering reduction/suffering abolition One of the most important and under appreciated trends in the world right now. 1. 100s of billions of dollars will soon be available to solve big problems (making the world resilient to ASI, ending factory farming, etc). 2. The projects and organizations which will turn x.com/nanransohoff/s…",
+          "source_document_id": "x-2057149812865462567",
+          "timestamp": "2026-05-20T17:21:50",
+          "url": "https://x.com/Plus3Happiness/status/2057149812865462567",
+          "umap_x": -2.7,
+          "umap_y": -4.67654,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: suffering abolition, leaders that can uplift, decentralized network, cults."
+        },
+        {
+          "id": "art_479f388d5488",
+          "title": "Suffering Abolition and Leader Incentives receipt from 2026-06-12",
+          "excerpt": "looking beyond it, the demand is for leaders that can uplift. that could take \"little old me\" to \"one like him\" if the promise was kept, what ends up as \"cults\" would look more like a decentralized network of peers however, even in \"spiritual\" spaces incentives can corrupt Demand for cult leaders vastly outstrips supply.",
+          "source_document_id": "x-2065508146731168251",
+          "timestamp": "2026-06-12T18:54:52",
+          "url": "https://x.com/Plus3Happiness/status/2065508146731168251",
+          "umap_x": -2.7,
+          "umap_y": -4.67654,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: suffering abolition, leaders that can uplift, decentralized network, cults."
+        }
+      ],
+      "artifact_count": 2,
+      "cluster_id": 4,
+      "color": "#f43f5e",
+      "centroid": [
+        -2.7,
+        -4.67654
+      ],
+      "mass": 19.2,
+      "orbit": 0.7,
+      "proof_score": 0.84,
+      "receipt_id": "rcpt_41911a0619c4",
+      "attestation_status": "sensor-visible-public-x-capture"
+    },
+    {
+      "id": "planet_f4f4e5ffb8bf",
+      "name": "Work Culture as Emotional Bug Report",
+      "summary": "Reads startup hustle and office culture through emotional efficiency: time spent is not work, 7-day intensity is often propaganda, and conditioning binds meaning to work outcomes. 2 quote-backed receipts pinned from the sensor dump.",
+      "top_terms": [
+        "emotional bug",
+        "office culture",
+        "7d/week",
+        "work outcomes",
+        "conditioning"
+      ],
+      "artifacts": [
+        {
+          "id": "art_1a937b5410e4",
+          "title": "Work Culture as Emotional Bug Report receipt from 2026-05-31",
+          "excerpt": "these folks are working 7d/week at a very likely 25% efficiency... i've seen enough of the SF office culture in person to grok how much time isnt productive, just \"spent\" miss me with the propaganda, they shd rather process whatever emotional bug convinces them this is \"good\" \"If you are not working 7 days per week, you are going to lose\". Corgi Insurance is the most intense workplace culture in startups. - The company works 7 days per week. - Founder (@nico_laqua) lives and sleeps in the office. - He built a cafe in the office because there was",
+          "source_document_id": "x-2061152577853800517",
+          "timestamp": "2026-05-31T18:27:23",
+          "url": "https://x.com/Plus3Happiness/status/2061152577853800517",
+          "umap_x": 2.875,
+          "umap_y": -4.97965,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: emotional bug, office culture, 7d/week, work outcomes."
+        },
+        {
+          "id": "art_929b2796bcdf",
+          "title": "Work Culture as Emotional Bug Report receipt from 2026-06-06",
+          "excerpt": "why, hobbies will allow them to outrun the Conditioning between Meaning in their lives and Work Outcomes? cuz i kinda doubt that JUST IN: Anthropic co-founder Jack Clark reportedly warned new recruits to “get hobbies that aren’t computers,” saying the company is building a “superhuman coder with nation-state hacking capabilities.”",
+          "source_document_id": "x-2063058966259614189",
+          "timestamp": "2026-06-06T00:42:41",
+          "url": "https://x.com/Plus3Happiness/status/2063058966259614189",
+          "umap_x": 2.875,
+          "umap_y": -4.97965,
+          "proof_of_search": "X satellite public-visible capture → deduplicated tweet → curated topic planet. Terms: emotional bug, office culture, 7d/week, work outcomes."
+        }
+      ],
+      "artifact_count": 2,
+      "cluster_id": 5,
+      "color": "#84cc16",
+      "centroid": [
+        2.875,
+        -4.97965
+      ],
+      "mass": 20.0,
+      "orbit": 0.82,
+      "proof_score": 0.84,
+      "receipt_id": "rcpt_fcfafc54e0f4",
+      "attestation_status": "sensor-visible-public-x-capture"
     }
   ],
   "provenance": {
-    "builder": "sunforge",
-    "clusterer": "kmeans-on-umap-coordinates",
-    "embedding": "tf-idf",
-    "reducer": "umap",
+    "builder": "sunforge+curated-sensor-extension-import",
+    "version": "0.2.0",
+    "embedding": "x-satellite-public-visible-dump",
+    "reducer": "curated-topic-map-from-deduplicated-receipts",
+    "clusterer": "human-labeled-keyword-gated-planets",
+    "source_dump": "local Trust Substrate X satellite NDJSON export; raw filename omitted from public manifest",
+    "public_source_file": "data/plus3happiness-x-satellite-public-visible.jsonl",
     "trust_os_mapping": {
-      "artifact": "dated quote-backed proof-of-search receipt",
-      "issue_registration": "broadcast of existence into the galaxy root repo",
-      "planet": "visitable UMAP topic cluster",
-      "sun": "corpus gravity center"
-    },
-    "version": "0.1.0"
+      "sun": "public-visible corpus gravity center",
+      "planet": "visitable topic cluster with quote receipts",
+      "artifact": "dated X quote captured by sensor extension",
+      "coverage": "visible-surface-only; hidden replies and actor-level likes unavailable"
+    }
   },
   "sun": {
-    "active_days": 5,
-    "color": "#f59e0b",
-    "description": "Plus3Happiness's proof-of-search sun: 5 dated artifacts across 5 active days.",
+    "id": "sun_8a2399875dd0",
     "display_name": "Plus3Happiness",
-    "document_count": 5,
-    "emissions": [
-      "Repo",
-      "Claims",
-      "Evidence",
-      "Receipts",
-      "Need",
-      "Lineage"
-    ],
-    "generated_at": "2026-06-26T17:18:16.052898+00:00",
-    "id": "sun_1719f74e7e40",
-    "mass": 21.69,
     "user_id": "@Plus3Happiness",
-    "word_count": 84
+    "description": "Public-visible sensor-derived map of @Plus3Happiness: operationalized happiness work plus an explicit product instinct for transparent trust networks.",
+    "document_count": 69,
+    "word_count": 3260,
+    "active_days": 32,
+    "mass": 48.539,
+    "color": "#f59e0b",
+    "generated_at": "2026-06-26T18:18:58.763597+00:00",
+    "emissions": [
+      "Trust Networks",
+      "Happiness Work",
+      "Meditation / Agency",
+      "Direct Pointing",
+      "Suffering Abolition",
+      "Work Culture"
+    ]
   },
   "visible_spectrum": {
-    "bands": [
-      {
-        "artifact_density": 1.0,
-        "color": "#610061",
-        "compression_reason": "mass→intensity, cluster-rank→wavelength, artifacts→band thickness",
-        "human_handle": "Repo / Proof: 3 receipts, proof 0.912",
-        "intensity": 1.0,
-        "label": "Repo / Proof",
-        "planet_id": "planet_ea5afcbbf3ba",
-        "wavelength_nm": 380
-      },
-      {
-        "artifact_density": 0.667,
-        "color": "#0028ff",
-        "compression_reason": "mass→intensity, cluster-rank→wavelength, artifacts→band thickness",
-        "human_handle": "Want Museum / Planets Agents: 2 receipts, proof 0.725",
-        "intensity": 0.852,
-        "label": "Want Museum / Planets Agents",
-        "planet_id": "planet_35622efbde48",
-        "wavelength_nm": 445
-      }
-    ],
+    "instrument": "visible-spectrum-safe-sun-viewer",
+    "default_profile": "human_visible_safe",
+    "premise": "The sun is too information-dense to stare at directly; this version uses the sensor extension to turn visible public traces into visitable bands.",
     "constraints": {
+      "wavelength_min_nm": 380,
+      "wavelength_max_nm": 740,
       "default_detail_budget": 3,
       "default_excerpt_chars": 280,
-      "warning": "Changing the band changes what you can see. It does not change what the sun contains.",
-      "wavelength_max_nm": 740,
-      "wavelength_min_nm": 380
+      "warning": "Changing the band changes what you can see. It does not change what the captured corpus contains."
     },
     "controls": {
-      "artifact_policy": "centroid-nearest-first",
-      "band_max_nm": 740,
       "band_min_nm": 380,
-      "color_policy": "wavelength_nm_to_rgb",
+      "band_max_nm": 740,
       "detail_budget": 3,
-      "render_mode": "photosphere"
+      "render_mode": "photosphere",
+      "artifact_policy": "curated-representative-receipts",
+      "color_policy": "wavelength_nm_to_rgb"
     },
-    "default_profile": "human_visible_safe",
-    "instrument": "visible-spectrum-safe-sun-viewer",
-    "premise": "The sun is too information-dense to stare at directly; the viewer exposes a configurable visible band.",
     "sun_observation": {
-      "hidden_mass_note": "Unselected topics remain outside the current band; use the controls to move the instrument, not to pretend the rest is gone.",
-      "luminosity": 0.271,
+      "luminosity": 0.502,
       "visible_terms": [
-        "Repo",
-        "Claims",
-        "Evidence",
-        "Receipts",
-        "Need",
-        "Lineage"
-      ]
-    }
-  }
+        "Trust Networks",
+        "Happiness Work",
+        "Agency",
+        "Transmission",
+        "Suffering",
+        "Work Culture"
+      ],
+      "hidden_mass_note": "The sensor dump is public-visible only; this is not comprehensive identity or reputation."
+    },
+    "bands": [
+      {
+        "planet_id": "planet_70f524193e4b",
+        "label": "Vouchsafe / Transparent Trust Networks",
+        "wavelength_nm": 390,
+        "color": "#14b8a6",
+        "intensity": 0.917,
+        "artifact_density": 1.0,
+        "human_handle": "Vouchsafe / Transparent Trust Networks: 4 receipts, proof 0.96",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      },
+      {
+        "planet_id": "planet_9427750f2461",
+        "label": "Happiness Independent of Conditions",
+        "wavelength_nm": 455,
+        "color": "#f59e0b",
+        "intensity": 0.7,
+        "artifact_density": 0.5,
+        "human_handle": "Happiness Independent of Conditions: 2 receipts, proof 0.84",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      },
+      {
+        "planet_id": "planet_0fec2e08e720",
+        "label": "Meditation, Ambition, and Agency",
+        "wavelength_nm": 515,
+        "color": "#8b5cf6",
+        "intensity": 0.858,
+        "artifact_density": 0.75,
+        "human_handle": "Meditation, Ambition, and Agency: 3 receipts, proof 0.9",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      },
+      {
+        "planet_id": "planet_5b554a087785",
+        "label": "Direct Pointing / Thousands of Data Points",
+        "wavelength_nm": 575,
+        "color": "#06b6d4",
+        "intensity": 0.642,
+        "artifact_density": 0.25,
+        "human_handle": "Direct Pointing / Thousands of Data Points: 1 receipts, proof 0.78",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      },
+      {
+        "planet_id": "planet_d40fbbde6568",
+        "label": "Suffering Abolition and Leader Incentives",
+        "wavelength_nm": 635,
+        "color": "#f43f5e",
+        "intensity": 0.8,
+        "artifact_density": 0.5,
+        "human_handle": "Suffering Abolition and Leader Incentives: 2 receipts, proof 0.84",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      },
+      {
+        "planet_id": "planet_f4f4e5ffb8bf",
+        "label": "Work Culture as Emotional Bug Report",
+        "wavelength_nm": 705,
+        "color": "#84cc16",
+        "intensity": 0.833,
+        "artifact_density": 0.5,
+        "human_handle": "Work Culture as Emotional Bug Report: 2 receipts, proof 0.84",
+        "compression_reason": "curated planet order→wavelength, receipt count→band thickness, mass→intensity"
+      }
+    ]
+  },
+  "repo_url": "https://github.com/leo-guinan/sun-plus3happiness",
+  "viewer_url": "https://explore.metaspn.network/plus3happiness/",
+  "manifest_url": "https://raw.githubusercontent.com/leo-guinan/sun-plus3happiness/main/sun.json",
+  "id": "sun-plus3happiness"
 }
