@@ -2,6 +2,8 @@
 
 A generated proof-of-search sun repo for `@Plus3Happiness`.
 
+Boundary: this v0 sun is built from the seed public conversation excerpt supplied in the build request, not a full X/Twitter archive. It proves the repo-generation and galaxy-registration loop, not a comprehensive map of the person. The map should be rebuilt when a larger public-safe corpus is attached.
+
 Open `index.html` or serve locally:
 
 ```bash
